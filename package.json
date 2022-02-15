@@ -1,0 +1,29 @@
+{
+  "name": "observer",
+  "version": "1.0.0",
+  "description": "观察者api ## ResizeObserver()",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btea/observer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btea/observer/issues"
+  },
+  "homepage": "https://github.com/btea/observer#readme",
+  "dependencies": {
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "typescript": "^4.5.5",
+    "vite": "^2.8.2"
+  }
+}
