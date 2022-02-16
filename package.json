@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/btea/observer#readme",
   "dependencies": {
+    "element-plus": "^2.0.2",
     "vue": "^3.2.31"
   },
   "devDependencies": {
