@@ -1,30 +1,45 @@
 {
   "name": "observer",
-  "version": "1.0.0",
-  "description": "观察者api ## ResizeObserver()",
-  "main": "index.js",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --port 5050",
+    "typecheck": "vue-tsc --noEmit",
+    "prepare": "husky install",
+    "lint": "eslint . --ext .js,.ts,.json,.vue --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/btea/observer.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/btea/observer/issues"
-  },
-  "homepage": "https://github.com/btea/observer#readme",
   "dependencies": {
-    "element-plus": "^2.0.2",
+    "element-plus": "2.1.8",
     "vue": "^3.2.31"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.0",
-    "typescript": "^4.5.5",
-    "vite": "^2.8.2"
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@rushstack/eslint-patch": "^1.1.2",
+    "@types/node": "^16.11.26",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "@vue/tsconfig": "^0.1.3",
+    "eslint": "^8.13.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3",
+    "sass": "^1.50.0",
+    "typescript": "~4.6.3",
+    "unplugin-auto-import": "^0.7.1",
+    "unplugin-vue-components": "^0.19.3",
+    "vite": "^2.9.1",
+    "vite-plugin-pwa": "^0.12.0",
+    "vue-tsc": "^0.33.9"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }

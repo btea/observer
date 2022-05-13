@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import ResizeObserver from './ResizeObserver.vue';
+import ResizeObserver from './ResizeObserver.vue'
 </script>
 <template>
-    <resize-observer></resize-observer>
+  <resize-observer></resize-observer>
 </template>
