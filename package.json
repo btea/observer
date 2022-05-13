@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "element-plus": "2.1.8",
+    "highlight.js": "^11.5.1",
+    "markdown-it": "^13.0.1",
     "vue": "^3.2.31"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@rushstack/eslint-patch": "^1.1.2",
+    "@types/markdown-it": "^12.2.3",
     "@types/node": "^16.11.26",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
