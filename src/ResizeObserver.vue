@@ -18,7 +18,7 @@ const obs = new ResizeObserver(entries => {
   console.log(entries)
 })
 onMounted(() => {
-  obs.observe(document.querySelector<HTMLElement>('.box'))
+  obs.observe(document.querySelector<HTMLElement>('.box')!)
 })
 onBeforeUnmount(() => {
   obs.disconnect()
